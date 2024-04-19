@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
                 xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
@@ -44,7 +44,7 @@
         </xsl:copy>
     </xsl:template>
 
-    <!-- Identity transform -->
+    <!-- Add Signature element -->
     <xsl:template match="/md:EntitiesDescriptor">
         <xsl:copy>
           <xsl:attribute name="xml:id">metadata</xsl:attribute>
