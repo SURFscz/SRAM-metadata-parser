@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="http://www.surfconext.nl/" xsi:schemaLocation="urn:oasis:names:tc:SAML:2.0:metadata sstc-saml-schema-metadata-2.0.xsd urn:mace:shibboleth:metadata:1.0 shibboleth-metadata-1.0.xsd http://www.w3.org/2000/09/xmldsig# xmldsig-core-schema.xsd">
+  <md:EntityDescriptor entityID="http://login-test.maastrichtuniversity.nl/adfs/services/trust">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <shibmd:Scope xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" regexp="false">maastrichtuniversity.nl</shibmd:Scope>
+      <shibmd:Scope xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" regexp="false">unimaas.nl</shibmd:Scope>
+      <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+        <mdui:DisplayName xml:lang="nl">Universiteit Maastricht (test)</mdui:DisplayName>
+        <mdui:DisplayName xml:lang="en">Maastricht University (test)</mdui:DisplayName>
+        <mdui:Description xml:lang="nl">Universiteit Maastricht (test)</mdui:Description>
+        <mdui:Description xml:lang="en">Maastricht University (test)</mdui:Description>
+        <mdui:Logo height="160" width="200">https://static.surfconext.nl/logos/idp/unimaas.png</mdui:Logo>
+        <mdui:Keywords xml:lang="en">Maastricht University  Universiteit unimaas Universiteit mu um</mdui:Keywords>
+        <mdui:Keywords xml:lang="nl">Maastricht University  Universiteit unimaas Universiteit mu um</mdui:Keywords>
+      </mdui:UIInfo>
+    </md:Extensions>
+    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>MIIE7TCCA1WgAwIBAgIJANrbxA3xAUIIMA0GCSqGSIb3DQEBCwUAMIGMMQswCQYDVQQGEwJOTDEQMA4GA1UECAwHVXRyZWNodDEQMA4GA1UEBwwHVXRyZWNodDESMBAGA1UECgwJU1VSRiBCLlYuMRgwFgYDVQQLDA9TVVJGY29uZXh0IFRFU1QxKzApBgNVBAMMImVuZ2luZS50ZXN0LnN1cmZjb25leHQubmwgMjAyMzA0MDMwHhcNMjMwNDAzMTI1ODA0WhcNMjgwNDAyMTI1ODA0WjCBjDELMAkGA1UEBhMCTkwxEDAOBgNVBAgMB1V0cmVjaHQxEDAOBgNVBAcMB1V0cmVjaHQxEjAQBgNVBAoMCVNVUkYgQi5WLjEYMBYGA1UECwwPU1VSRmNvbmV4dCBURVNUMSswKQYDVQQDDCJlbmdpbmUudGVzdC5zdXJmY29uZXh0Lm5sIDIwMjMwNDAzMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAx+vZHDla/MMnksJjWfKwXXl7cmW9sEaavn3xNEGa9qjxA5GZXwQjSIrKwB9LLZLIPQIjyIzUJDl1oUrx3TYEg8wjYGs/PhavVLdlpJTqPHoSGKpHBQBoAqaN3hT9ahFkD3RyamLOWX0o4lOnManIuWMhdQe5qVbQehlbpKLbsLIApYryE2aTICQ0KxB1aobbudaslujYXuqAC8SZaP+lbZ7Pa9NkLI03UDk8wO5ZpCA/vad/6/QTfMqPrXM8xho8YjIXgUDSPbyyi8R0I6vDlk1asH2e8ujmregrSBu02reQLft4Drr1xBWLc7y23mFcixjEa1fynWcVvshfVJe2Syk+1Mak3TuAW2+/i6n8GcQejH5UgVBRpOi/XE9Gw37ImD4sld2kDnztsoqF1+LGTciolPJiB1mja6Ew9NRKy1y3waM3ZTKZyHg+GKZumtmTw+4dC72MnH8lkiB8iYInPB5jvUK/c14rDmOzaGWJavjLnxy8UXuKCJJUOMz0JxWlAgMBAAGjUDBOMB0GA1UdDgQWBBQC4qy6CHN6ndJyqycDbZYtOrjESDAfBgNVHSMEGDAWgBQC4qy6CHN6ndJyqycDbZYtOrjESDAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBgQAvrqfrfeY4J+wpSaaGHD53Z7X8SZx0jyHUbszYrKlAgxNO8bo0zbbCSkaJ/DJx7XmY2e1Po3u/qrYa3PQSlC31iQCF+8StLtGFdRLPAabl8OS5YqvOyHF0LHqhnJGkIgWIadkwlez4O4fA1X7JDk3K9oz/thR5xsJY31yCFxIWSaQVEW8j1vKcb0jK7ig7JHa7APvZNQY2A9Y06YhFEeNCu8MjmTHtY3Khko3PrsTIzXcUxWCztjvCmv4y7Jzhn4WzRKpRRskzaU6fZ6lty6Fk5L5u0PTfDQ8YNzgxfniIjdkeBLxSmvvoL6BhhDhwlHoSGekmDnyVh0n9qUKp5uBNsdy6LsQF6KJ1jNEN0raMOf3FS1bt0SWPTpZoXEEM6ao6TlfndvDX2zKzUdhE82QpNXThHZXrF6w3lgMyUugcxlvC2OwsJzmYH8fSU+xxSO8TrwDd9unmy+4hGfF3Gm7Oj+AI+6czR7VWtqz1dcV1sfi/fc9EVUD15XCiPD38F9s=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://engine.test.surfconext.nl/authentication/idp/single-sign-on/key:20230403/042739ea37f40d5e42358372d98a7ec4"/>
+  </md:IDPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en">Universiteit Maastricht</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en">Maastricht University</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en">http://www.maastrichtuniversity.nl/</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson contactType="administrative">
+    <md:GivenName>SURFconext support</md:GivenName>
+    <md:EmailAddress>mailto:support@surfconext.nl</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>SURFconext support</md:GivenName>
+    <md:EmailAddress>mailto:support@surfconext.nl</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:GivenName>SURFconext support</md:GivenName>
+    <md:EmailAddress>mailto:help@surfconext.nl</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson xmlns:remd="http://refeds.org/metadata" contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <md:GivenName>SURFcert</md:GivenName>
+    <md:EmailAddress>mailto:cert@surfcert.nl</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
+  <md:EntityDescriptor entityID="https://irma.vetting-poc.surfconext.nl/metadata">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+        <mdui:Logo height="160" width="200">https://static.surfconext.nl/media/idp/dummy-idp.jpg</mdui:Logo>
+      </mdui:UIInfo>
+    </md:Extensions>
+    <md:KeyDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>MIIE7TCCA1WgAwIBAgIJANrbxA3xAUIIMA0GCSqGSIb3DQEBCwUAMIGMMQswCQYDVQQGEwJOTDEQMA4GA1UECAwHVXRyZWNodDEQMA4GA1UEBwwHVXRyZWNodDESMBAGA1UECgwJU1VSRiBCLlYuMRgwFgYDVQQLDA9TVVJGY29uZXh0IFRFU1QxKzApBgNVBAMMImVuZ2luZS50ZXN0LnN1cmZjb25leHQubmwgMjAyMzA0MDMwHhcNMjMwNDAzMTI1ODA0WhcNMjgwNDAyMTI1ODA0WjCBjDELMAkGA1UEBhMCTkwxEDAOBgNVBAgMB1V0cmVjaHQxEDAOBgNVBAcMB1V0cmVjaHQxEjAQBgNVBAoMCVNVUkYgQi5WLjEYMBYGA1UECwwPU1VSRmNvbmV4dCBURVNUMSswKQYDVQQDDCJlbmdpbmUudGVzdC5zdXJmY29uZXh0Lm5sIDIwMjMwNDAzMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAx+vZHDla/MMnksJjWfKwXXl7cmW9sEaavn3xNEGa9qjxA5GZXwQjSIrKwB9LLZLIPQIjyIzUJDl1oUrx3TYEg8wjYGs/PhavVLdlpJTqPHoSGKpHBQBoAqaN3hT9ahFkD3RyamLOWX0o4lOnManIuWMhdQe5qVbQehlbpKLbsLIApYryE2aTICQ0KxB1aobbudaslujYXuqAC8SZaP+lbZ7Pa9NkLI03UDk8wO5ZpCA/vad/6/QTfMqPrXM8xho8YjIXgUDSPbyyi8R0I6vDlk1asH2e8ujmregrSBu02reQLft4Drr1xBWLc7y23mFcixjEa1fynWcVvshfVJe2Syk+1Mak3TuAW2+/i6n8GcQejH5UgVBRpOi/XE9Gw37ImD4sld2kDnztsoqF1+LGTciolPJiB1mja6Ew9NRKy1y3waM3ZTKZyHg+GKZumtmTw+4dC72MnH8lkiB8iYInPB5jvUK/c14rDmOzaGWJavjLnxy8UXuKCJJUOMz0JxWlAgMBAAGjUDBOMB0GA1UdDgQWBBQC4qy6CHN6ndJyqycDbZYtOrjESDAfBgNVHSMEGDAWgBQC4qy6CHN6ndJyqycDbZYtOrjESDAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBgQAvrqfrfeY4J+wpSaaGHD53Z7X8SZx0jyHUbszYrKlAgxNO8bo0zbbCSkaJ/DJx7XmY2e1Po3u/qrYa3PQSlC31iQCF+8StLtGFdRLPAabl8OS5YqvOyHF0LHqhnJGkIgWIadkwlez4O4fA1X7JDk3K9oz/thR5xsJY31yCFxIWSaQVEW8j1vKcb0jK7ig7JHa7APvZNQY2A9Y06YhFEeNCu8MjmTHtY3Khko3PrsTIzXcUxWCztjvCmv4y7Jzhn4WzRKpRRskzaU6fZ6lty6Fk5L5u0PTfDQ8YNzgxfniIjdkeBLxSmvvoL6BhhDhwlHoSGekmDnyVh0n9qUKp5uBNsdy6LsQF6KJ1jNEN0raMOf3FS1bt0SWPTpZoXEEM6ao6TlfndvDX2zKzUdhE82QpNXThHZXrF6w3lgMyUugcxlvC2OwsJzmYH8fSU+xxSO8TrwDd9unmy+4hGfF3Gm7Oj+AI+6czR7VWtqz1dcV1sfi/fc9EVUD15XCiPD38F9s=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://engine.test.surfconext.nl/authentication/idp/single-sign-on/key:20230403/a4030fbd4b14798ee46382e77e4889c1"/>
+  </md:IDPSSODescriptor>
+  <md:ContactPerson contactType="administrative">
+    <md:GivenName>SURFconext support</md:GivenName>
+    <md:EmailAddress>mailto:support@surfconext.nl</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>SURFconext support</md:GivenName>
+    <md:EmailAddress>mailto:support@surfconext.nl</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:GivenName>SURFconext support</md:GivenName>
+    <md:EmailAddress>mailto:help@surfconext.nl</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson xmlns:remd="http://refeds.org/metadata" contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <md:GivenName>SURFcert</md:GivenName>
+    <md:EmailAddress>mailto:cert@surfcert.nl</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
+</md:EntitiesDescriptor>

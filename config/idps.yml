@@ -1,0 +1,11 @@
+in:
+    - tmp/idps-metadata.xml
+select:
+    - "https://idp.diy.surfconext.nl/saml2/idp/metadata.php"
+    - "http://mock-idp"
+    - "https://login.test.eduid.nl"
+    - "https://idp-acc.surfnet.nl"
+    - "https://login.uaccess-a.leidenuniv.nl/nidp/saml2/metadata"
+    - "test-idp.lab.surf.nl"
+    - "https://test-idp.sram.surf.nl/saml/saml2/idp/metadata.php"
+    - "https://idp.ci-runner.sram.surf.nl/saml/saml2/idp/metadata.php"

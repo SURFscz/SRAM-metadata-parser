@@ -1,0 +1,9 @@
+in:
+    - src/entityIDs_1.xml
+    - src/entityIDs_2.xml
+    - src/entityIDs_3.xml
+select:
+    - http://login-test.maastrichtuniversity.nl/adfs/services/trust
+    - https://irma.vetting-poc.surfconext.nl/metadata
+    - https://beta.surfnet.nl/SURFdropjesIdP
+    - https://idp.somaliren.org.so/idp/shibboleth
