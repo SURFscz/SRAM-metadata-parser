@@ -1,2 +1,2 @@
 # pyff-lite
-A lightweight metadata aggregation tool
+A lightweight SAML metadata aggregation tool.
