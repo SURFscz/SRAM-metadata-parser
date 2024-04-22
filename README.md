@@ -1,4 +1,4 @@
-# pyff-lite
+# SRAM metadata parser
 A lightweight SAML metadata aggregation tool.
 
 Edugain feed parsing resource usage
