@@ -15,7 +15,7 @@ parse() {
     SIGNED=out/${1}_signed.xml
     trap 'rm -f -- tmp/tmp.*' EXIT
 
-    ./venv/bin/python pyff-lite.py config/${1}.yml $PARSED
+    time -v ./venv/bin/python pyff-lite.py config/${1}.yml $PARSED
     xalan -in $PARSED -xsl xslt/${2} > $CLEANED
     xmlsec1 sign --pubkey-cert-pem cert/signing.pem --privkey-pem cert/signing.key --output $SIGNED $CLEANED
     xmlsec1 verify --pubkey-cert-pem cert/signing.pem $SIGNED
